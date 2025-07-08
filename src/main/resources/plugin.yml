@@ -1,0 +1,9 @@
+name: PerchCopyright
+version: 1.0.0
+main: me.perch.copyright.Copyright
+api-version: '1.20'
+commands:
+  Copyright:
+    description: Add copyright to maps
+  Copyrightreload:
+    description: reloads plugin

@@ -1,0 +1,10 @@
+lang:
+  cant_remove: "&cYou can't remove this Copyright."
+  Copyright_removed: "&aCopyright removed."
+  Copyright_added: "&aCopyright added"
+  not_holding_map: "&cYou need to be holding a map to use this command."
+  cant_duplicate: "&cYou can't duplicate this"
+  cant_Copyright: "This map has already been Copyrighted."
+  remove_no_Copyright: "&cThis map hasn't been Copyrighted."
+  no_perms: "&cYou don't have permission to use this command."
+  Copyright_format: "&cBy %player%"

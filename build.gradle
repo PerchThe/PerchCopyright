@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group = 'me.perch'
+version = '1.0.0'
+archivesBaseName = 'PerchCopyright'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url = 'https://oss.sonatype.org/content/groups/public/' }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.20-R0.1-SNAPSHOT'
+    // Add more dependencies here if needed
+}
+
+// This block ensures duplicate resources are excluded (fixes plugin.yml duplicate error)
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+jar {
+    manifest {
+        attributes(
+                // This is not required for Spigot plugins, but you can keep it for reference
+                'Main-Class': 'me.perch.copyright.Copyright'
+        )
+    }
+    // No need to include dependencies in the jar for a Spigot plugin
+}
