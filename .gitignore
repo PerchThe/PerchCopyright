@@ -1,18 +1,4 @@
-# Gradle build output
-/build/
-/.gradle/
-
-# IntelliJ IDEA
-.idea/
-*.iml
-/out/
-
-# VS Code
-.vscode/
 
 # OS files
 .DS_Store
 Thumbs.db
-
-# Logs
-*.log
