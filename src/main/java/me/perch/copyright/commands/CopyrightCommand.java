@@ -63,7 +63,7 @@ public class CopyrightCommand implements CommandExecutor {
                 meta.setLore(lore);
 
                 //metadata
-                meta.getPersistentDataContainer().remove(Copyright_OWNER_KEY);
+                meta.getPersistentDataContainer().remove(Copyright.OWNER_KEY);
 
                 item.setItemMeta(meta);
 
@@ -86,7 +86,7 @@ public class CopyrightCommand implements CommandExecutor {
 
                 //metadata
                 String uuid = player.getUniqueId().toString();
-                meta.getPersistentDataContainer().set(Copyright_OWNER_KEY, PersistentDataType.STRING, uuid);
+                meta.getPersistentDataContainer().set(Copyright.OWNER_KEY, PersistentDataType.STRING, uuid);
 
                 item.setItemMeta(meta);
 
